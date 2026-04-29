@@ -16,7 +16,6 @@ import { useLocalSearchParams, Link } from 'expo-router';
 import * as ImagePicker from 'expo-image-picker';
 import { Image } from 'expo-image';
 import axios from 'axios';
-import { BrainCircuit } from '@tamagui/lucide-icons';
 
 const API_BASE = process.env.EXPO_PUBLIC_API_URL || "http://127.0.0.1:8000/v1";
 import { 
