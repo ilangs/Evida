@@ -1,0 +1,28 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+env/
+.env
+.env.local
+
+# MacOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Database
+*.db
+*.sqlite3
