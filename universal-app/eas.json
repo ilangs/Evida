@@ -1,0 +1,29 @@
+{
+  "cli": {
+    "version": ">= 7.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "http://127.0.0.1:8000/v1"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api-staging.yourdomain.com/v1"
+      }
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://api.yourdomain.com/v1"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}

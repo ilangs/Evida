@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Evida",
+    "slug": "Evida",
+    "owner": "evida",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "splash": {
+      "image": "./assets/images/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A192F"
+    },
+    "scheme": "evida",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.evida.app"
+    },
+    "android": {
+      "package": "com.evida.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A192F",
+        "foregroundImage": "./assets/images/adaptive-icon.png"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
