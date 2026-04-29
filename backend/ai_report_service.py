@@ -1,3 +1,15 @@
+"""
+Evida AI Report Generation Service (ai_report_service.py)
+-------------------------------------------------------
+본 모듈은 사용자의 생체 데이터, MBTI 페르소나, 그리고 Pinecone RAG에서 추출한 의학적 근거를 통합하여
+초개인화된 건강 분석 리포트를 생성하는 LLM 파이프라인을 담당합니다.
+
+주요 로직:
+- GPT-4o-mini를 활용하여 비용을 최소화하면서 양질의 분석 결과를 반환 (Phase 3 비용 최적화 적용).
+- 누락된 생체 데이터(혈액 검사 등)가 있을 경우, 이를 감지하고 유저에게 추가 측정을 권고하는 안내 문구 생성.
+- 목표 감량/증량 수치에 대한 임상적 안전성을 확보하기 위해 RAG 엔진의 가이드라인을 Prompt에 강제 주입.
+"""
+
 import os
 import json
 from typing import Dict, Any, Optional, List

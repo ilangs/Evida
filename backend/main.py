@@ -1,3 +1,16 @@
+"""
+Evida Backend Main Application (main.py)
+----------------------------------------
+본 모듈은 FastAPI 기반의 핵심 API 엔드포인트와 미들웨어, 의존성 주입 로직을 정의합니다.
+주요 기능:
+- 인증 및 보안: JWT 검증 미들웨어, Sentry 에러 로깅, 민감정보 암호화(Encryption at rest).
+- 건강 데이터 연동: OCR을 통한 혈액검사 등록, AI 에이전트 리포트 자동 생성.
+- 대화형 코칭: LangGraph 연동 Chat API 및 능동형 푸시(Proactive) 로직.
+- 상용화 연동: PortOne 웹훅을 통한 결제 검증 및 User 프리미엄 상태 전환.
+
+의학적 면책 조항: 본 애플리케이션의 결과물은 전문 의료진을 대체할 수 없으며, 모든 건강 정보는 참고용(Guideline)입니다.
+"""
+
 import os
 import uuid
 from datetime import datetime
